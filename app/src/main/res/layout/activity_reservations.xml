@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Reservations">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:textSize="15dp"
+        android:text="Select type of hall"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="20dp"
+
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="45dp"
+        android:textSize="15dp"
+        android:text="For-Somkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="70dp"
+            android:textSize="15dp"
+            android:text="For-None-Somkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:textSize="20dp"
+        android:text="Number of people"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:layout_margin="20dp"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/seekBarIn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <TextView
+        android:hint="13/05/1999"
+        android:textSize="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_date"
+       />
+
+    <TextView
+        android:hint="08:08"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_time"
+         />
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/calendar"
+           android:id="@+id/btn_date"
+           />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+       android:src="@drawable/alarmclock"
+        android:id="@+id/btn_time"
+        />
+
+
+</LinearLayout>
+</LinearLayout>
